@@ -67,3 +67,46 @@ print(1==1.0 and 1==1.0 and 5==(3+2))
 print(1==1.0 or 1==1.0 or 5==(3+2))
 print(1==1.0 or 1==1.0 or not 5==(3+2))
 print(1==1.0 or 1==1.0 and 5==(3+2))
+
+
+#list exercises
+oddlist=[1,3,5,7,9]
+#yes, oddlist became a variable 
+print(oddlist)
+print(len(oddlist))
+#when you use len function on oddlist, python says the length is 5 
+print(type(oddlist))
+#when you use the type function on oddlist, python says it is a lsit
+intlist=range(100)
+print(list(intlist))
+#yes it lists all integers between 0 and 100
+
+
+#dictionary exercises
+foods=['sushi', 'noodles', 'cheesecake']
+name=['jolie']
+age=['22.0']
+year=['5']
+about_me={'yourname':name, 'age':age, 'year of study':year, 'favourite foods':foods}
+print(about_me)
+print(type(about_me))
+print(len(about_me))
+#python determines the lengh of dictionary by the number of variables represented, for example about_me is 4
+
+
+#array exercises 
+import numpy
+mixnums=numpy.array([5,6,7,2.25,3.25,4.25])
+print(mixnums)
+print(type(mixnums))
+#the array has turned all the integers into floats 
+mixtypes=numpy.array([5,6,2.25,3.25,'happy','love'])
+print(mixtypes)
+print(type(mixtypes))
+#the array has turned all te value into strings
+#python tries to make arrays in mixed types to be the same type
+oddarray=numpy.array([1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99])
+print(oddarray)
+print(type(oddarray))
+import numpy as np
+print(np.logspace(1,5,16))
